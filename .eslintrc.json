@@ -3,10 +3,10 @@
       "es2021": true
   },
   "extends": [
-    "plugin:prettier/recommended",
-      "plugin:react/recommended",
-      "airbnb",
-      "plugin:@typescript-eslint/recommended"
+    "prettier",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended"
   ],
   "globals": {
     "__DEV__": "readonly"
@@ -21,16 +21,17 @@
   },
   "plugins": [
     "prettier",
-      "react",
-      "@typescript-eslint",
-      "react-hooks"
+    "react",
+    "@typescript-eslint",
+    "react-hooks"
   ],
   "rules": {
     "prettier/prettier": [
       "error",
       {
         "semi": true,
-        "arrowParens": "avoid"
+        "arrowParens": "avoid",
+        "trailingComma": "es5"
       }
     ],
     "jsx-a11y/control-has-associated-label": "off",
